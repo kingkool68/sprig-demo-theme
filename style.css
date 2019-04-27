@@ -1,0 +1,172 @@
+/*
+Theme Name: Sprig Demo Theme
+Theme URI: https://github.com/kingkool68/sprig-demo-theme
+Author: Russell Heimlich
+Author URI: https://russellheimlich.com
+Description: A basic theme to demonstrate the useage of Sprig for Twig templating
+Version: 0.01
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+    /* Change default typefaces here */
+    font-family: serif;
+    font-size: 137.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Copy & Lists */
+p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+ul,
+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li,
+ol li {
+    line-height: 1.5rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Change heading typefaces here */
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 4.242rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.414rem;
+}
+
+h4 {
+    font-size: 0.707rem;
+}
+
+h5 {
+    font-size: 0.4713333333333333rem;
+}
+
+h6 {
+    font-size: 0.3535rem;
+}
+
+/* Tables */
+table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    padding: 0;
+    line-height: 33px;
+}
+
+/* Code blocks */
+code {
+    vertical-align: bottom;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 120px;
+}
+
+.archive-item time {
+    font-style: italic;
+}
+
+.archive-item p {
+    display: inline;
+}
+
+/* Pagination */
+.pagination {
+	padding-top: 45px;
+}
+
+.pagination .link-label {
+    display: none;
+}
+
+.pagination .link-items {
+	padding-left: 0;
+}
+
+.pagination .link-container {
+    list-style: none;
+		display: inline-block;
+}
+
+.pagination .link-item {
+	display: block;
+	padding: 6px 24px;
+	background-color: #efefef;
+	color: #000;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+.pagination .link-item:hover,
+.pagination .link-item:focus {
+	background-color: #001EE4;
+	color: #fff;
+}
+
+.pagination .current {
+	background-color: #000;
+	color: #fff;
+}

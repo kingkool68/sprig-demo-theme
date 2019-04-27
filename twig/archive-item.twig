@@ -1,0 +1,15 @@
+<article class="archive-item">
+	<h2>
+		{% if url %}
+			<a href="{{ url|esc_url }}">{{ title }}</a>
+		{% else %}
+			{{ title }}
+		{% endif %}
+	</h2>
+
+	{% if display_date %}
+		<time datetime="{{ machine_date|esc_attr }}">{{ display_date }}</time>
+	{% endif %}
+
+	{{ excerpt }}
+</article>

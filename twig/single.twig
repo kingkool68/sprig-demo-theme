@@ -1,0 +1,17 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+	<article>
+		{% if the_title %}
+			<h1>{{ the_title }}</h1>
+		{% endif %}
+
+		{% if display_date %}
+			<time datetime="{{ machine_date|esc_attr }}">{{ display_date }}</time>
+		{% endif %}
+
+		{{ the_content }}
+	</article>
+
+{% endblock %}

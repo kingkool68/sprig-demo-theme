@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{{ wp_title() }}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		{{ wp_head() }}
+
+		{% block head '' %}
+	</head>
+	<body {{ body_class() }}>
+
+		{{ get_header() }}
+
+		<div class="main-content">
+			<main>
+				{% block content '' %}
+			</main>
+		</div>
+
+		{{ get_footer() }}
+		{{ wp_footer() }}
+
+	</body>
+</html>
