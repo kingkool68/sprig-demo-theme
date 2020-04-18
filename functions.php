@@ -31,6 +31,7 @@ function filter_sprig_roots( $paths = array() ) {
 add_filter( 'sprig/roots', 'filter_sprig_roots' );
 
 function action_wp_enqueue_scripts() {
+	wp_enqueue_style( 'screen-css', 'https://screencss.com/screen-0.3.0.css' );
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'action_wp_enqueue_scripts' );
