@@ -2,8 +2,8 @@
 the_post();
 
 $context = array(
-	'the_title'   => get_the_title(),
-	'the_content' => apply_filters( 'the_content', get_the_content() ),
+	'the_title'   => apply_filters( 'the_title', get_the_title() ),
+	'the_content' => apply_filters( 'the_content', $post->post_content ),
 );
 
 $dates = RH_Helpers::get_date_values( $post->post_date );
